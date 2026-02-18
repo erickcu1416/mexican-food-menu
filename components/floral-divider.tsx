@@ -11,9 +11,9 @@ export function FloralDivider() {
       <div className="relative shrink-0 w-20 h-12 md:w-28 md:h-14">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/floral-divider.jpg"
+          src="/images/floral-divider.png"
           alt=""
-          className="w-full h-full object-contain drop-shadow-sm"
+          className="w-full h-full object-contain drop-shadow-sm opacity-75"
         />
       </div>
 

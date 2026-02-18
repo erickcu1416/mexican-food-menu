@@ -18,7 +18,7 @@ export function GuisosSection() {
         <div className="relative w-full h-36 md:h-44 overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/guisos.jpg"
+            src="/images/guisos.png"
             alt="Variedad de guisos mexicanos tradicionales"
             className="absolute inset-0 w-full h-full object-cover"
           />
