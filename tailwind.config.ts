@@ -70,9 +70,14 @@ const config: Config = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-3px)' },
         },
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+        'fade-in-up': 'fade-in-up 0.6s ease-out',
       },
     },
   },

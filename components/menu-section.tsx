@@ -47,11 +47,12 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
     <section className="px-5 md:px-8">
       <div className={`rounded-xl ${accent.bg} border-l-4 ${accent.border} overflow-hidden`}>
         {/* Section image */}
-        <div className="relative w-full h-36 md:h-44 overflow-hidden">
+        <div className="relative w-full h-36 md:h-44 overflow-hidden bg-muted">
           <Image
             src={image}
             alt={imageAlt}
             fill
+            sizes="(max-width: 640px) calc(100vw - 40px), 468px"
             className="object-cover"
             loading="lazy"
           />
@@ -70,7 +71,7 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
             {items.map((item) => (
               <li
                 key={item.name}
-                className="flex items-baseline justify-between gap-2"
+                className="flex items-baseline justify-between gap-2 rounded-md -mx-1 px-1 transition-colors hover:bg-black/[0.02] active:bg-black/[0.04]"
               >
                 <span className="font-sans text-base text-foreground">{item.name}</span>
                 <span className="flex-1 border-b border-dotted border-border min-w-[2rem] mx-1 translate-y-[-4px]" aria-hidden="true" />

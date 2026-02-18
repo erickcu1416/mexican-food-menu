@@ -8,16 +8,16 @@ export function MenuHeader() {
         className="absolute -top-2 -left-2 w-32 h-32 md:w-40 md:h-40 pointer-events-none z-0"
         style={{ maskImage: "radial-gradient(ellipse at top left, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.3) 50%, transparent 75%)", WebkitMaskImage: "radial-gradient(ellipse at top left, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.3) 50%, transparent 75%)" }}
       >
-        <Image src="/images/floral-corner.webp" alt="" width={320} height={191} className="w-full h-full object-contain mix-blend-multiply opacity-70" loading="lazy" aria-hidden="true" />
+        <Image src="/images/floral-corner.webp" alt="" width={320} height={191} className="w-full h-full object-contain mix-blend-multiply opacity-70" aria-hidden="true" />
       </div>
       <div
         className="absolute -top-2 -right-2 w-32 h-32 md:w-40 md:h-40 pointer-events-none z-0 -scale-x-100"
         style={{ maskImage: "radial-gradient(ellipse at top left, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.3) 50%, transparent 75%)", WebkitMaskImage: "radial-gradient(ellipse at top left, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.3) 50%, transparent 75%)" }}
       >
-        <Image src="/images/floral-corner.webp" alt="" width={320} height={191} className="w-full h-full object-contain mix-blend-multiply opacity-70" loading="lazy" aria-hidden="true" />
+        <Image src="/images/floral-corner.webp" alt="" width={320} height={191} className="w-full h-full object-contain mix-blend-multiply opacity-70" aria-hidden="true" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center gap-3 px-8">
+      <div className="relative z-10 flex flex-col items-center gap-3 px-8 motion-safe:animate-fade-in-up animation-fill-both">
         <p className="text-sm tracking-widest uppercase text-rosa-mexicano font-sans font-semibold">
           {"Menú Digital"}
         </p>
@@ -35,7 +35,7 @@ export function MenuHeader() {
       </div>
 
       {/* Hero image */}
-      <div className="mt-4 mx-5 md:mx-8 rounded-xl overflow-hidden shadow-md">
+      <div className="mt-4 mx-5 md:mx-8 rounded-xl overflow-hidden shadow-md bg-muted">
         <Image
           src="/images/hero-banner.webp"
           alt="Variedad de antojitos mexicanos tradicionales"

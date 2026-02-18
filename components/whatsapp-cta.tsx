@@ -11,7 +11,7 @@ export function WhatsAppCTA() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="pointer-events-auto animate-subtle-bounce flex items-center justify-center gap-2.5 w-full max-w-md mx-auto rounded-full bg-[#25D366] px-6 py-4 text-[#fff] font-sans font-bold text-base shadow-lg shadow-[#25D366]/30 transition-all duration-200 hover:bg-[#1DA851] hover:shadow-xl hover:shadow-[#25D366]/40 hover:animate-none active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
+        className="pointer-events-auto motion-safe:animate-subtle-bounce flex items-center justify-center gap-2.5 w-full max-w-md mx-auto rounded-full bg-[#25D366] px-6 py-4 text-[#fff] font-sans font-bold text-base shadow-lg shadow-[#25D366]/30 transition-all duration-200 hover:bg-[#1DA851] hover:shadow-xl hover:shadow-[#25D366]/40 hover:animate-none active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
         aria-label="Pedir por WhatsApp"
       >
         {/* WhatsApp icon */}

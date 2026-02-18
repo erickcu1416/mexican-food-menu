@@ -19,8 +19,10 @@ export const metadata: Metadata = {
   keywords: 'antojitos mexicanos, comida mexicana, tacos, panuchos, salbutes, menú digital',
   openGraph: {
     title: 'Antojitos Doña Martha | Menú Digital',
-    description: 'Deliciosos antojitos mexicanos. Pide por WhatsApp.',
+    description: 'Panuchos, salbutes, tacos al comal, guisos y bebidas. Menú completo con precios. ¡Pide directo por WhatsApp!',
     type: 'website',
+    locale: 'es_MX',
+    siteName: 'Antojitos Doña Martha',
     images: [
       {
         url: '/og-image.jpg',
@@ -30,7 +32,18 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Antojitos Doña Martha | Menú Digital',
+    description: 'Panuchos, salbutes, tacos al comal y más. ¡Pide por WhatsApp!',
+    images: ['/og-image.jpg'],
+  },
   manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Doña Martha',
+  },
 }
 
 export const viewport: Viewport = {

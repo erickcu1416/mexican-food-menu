@@ -53,44 +53,54 @@ export default function Page() {
         {/* Menu sections */}
         <div className="flex flex-col gap-5 mt-6">
           {/* Fritos */}
-          <MenuSection
-            title="Fritos"
-            items={fritosItems}
-            image="/images/fritos.webp"
-            imageAlt="Panuchos, salbutes y empanadas fritas"
-            accentColor="rosa"
-          />
+          <div className="motion-safe:animate-fade-in-up animation-fill-both">
+            <MenuSection
+              title="Fritos"
+              items={fritosItems}
+              image="/images/fritos.webp"
+              imageAlt="Panuchos, salbutes y empanadas fritas"
+              accentColor="rosa"
+            />
+          </div>
 
           <FloralDivider />
 
           {/* Al Comal */}
-          <MenuSection
-            title="Al Comal"
-            items={alComalItems}
-            image="/images/al-comal.webp"
-            imageAlt="Tacos, sopes, huaraches y quesadillas al comal"
-            accentColor="azul"
-          />
+          <div className="motion-safe:animate-fade-in-up animation-fill-both animation-delay-100">
+            <MenuSection
+              title="Al Comal"
+              items={alComalItems}
+              image="/images/al-comal.webp"
+              imageAlt="Tacos, sopes, huaraches y quesadillas al comal"
+              accentColor="azul"
+            />
+          </div>
 
           <FloralDivider />
 
           {/* Bebidas */}
-          <MenuSection
-            title="Bebidas"
-            items={bebidasItems}
-            image="/images/bebidas.webp"
-            imageAlt="Aguas frescas de jamaica y horchata"
-            accentColor="amarillo"
-          />
+          <div className="motion-safe:animate-fade-in-up animation-fill-both animation-delay-200">
+            <MenuSection
+              title="Bebidas"
+              items={bebidasItems}
+              image="/images/bebidas.webp"
+              imageAlt="Aguas frescas de jamaica y horchata"
+              accentColor="amarillo"
+            />
+          </div>
 
           <FloralDivider />
 
           {/* Guisos */}
-          <GuisosSection />
+          <div className="motion-safe:animate-fade-in-up animation-fill-both animation-delay-300">
+            <GuisosSection />
+          </div>
         </div>
 
+        <FloralDivider />
+
         {/* Footer */}
-        <footer className="mt-8 px-4 pb-4 text-center">
+        <footer className="mt-4 px-4 pb-4 text-center">
           <p className="text-xs text-muted-foreground font-sans">
             {"Precios sujetos a cambio sin previo aviso"}
           </p>

@@ -15,11 +15,12 @@ export function GuisosSection() {
     <section className="px-5 md:px-8">
       <div className="rounded-xl bg-verde/5 border-l-4 border-l-verde overflow-hidden">
         {/* Section image */}
-        <div className="relative w-full h-36 md:h-44 overflow-hidden">
+        <div className="relative w-full h-36 md:h-44 overflow-hidden bg-muted">
           <Image
             src="/images/guisos.webp"
             alt="Variedad de guisos mexicanos tradicionales"
             fill
+            sizes="(max-width: 640px) calc(100vw - 40px), 468px"
             className="object-cover"
             loading="lazy"
           />
@@ -41,7 +42,7 @@ export function GuisosSection() {
             {guisos.map((guiso) => (
               <span
                 key={guiso}
-                className="inline-flex items-center gap-1.5 rounded-full border border-verde/30 bg-verde/10 px-3 py-1.5 text-sm font-sans text-foreground transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-full border border-verde/30 bg-verde/10 px-3 py-1.5 text-sm font-sans text-foreground transition-colors hover:bg-verde/20 hover:border-verde/50"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-verde flex-shrink-0" aria-hidden="true" />
                 {guiso}
