@@ -4,7 +4,7 @@
   "description": "Menú digital de antojitos mexicanos",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFF5F0",
+  "background_color": "#FBF5F1",
   "theme_color": "#E6007E",
   "icons": [
     {

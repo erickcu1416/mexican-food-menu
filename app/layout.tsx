@@ -61,6 +61,30 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Restaurant",
+              name: "Antojitos Do\u00f1a Martha",
+              description: "Deliciosos antojitos mexicanos: panuchos, salbutes, tacos, sopes, huaraches y m\u00e1s.",
+              servesCuisine: "Mexican",
+              priceRange: "$",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Leona Vicario, Puerto Morelos",
+                addressRegion: "Quintana Roo",
+                addressCountry: "MX",
+              },
+              telephone: "+52-1-998-389-9888",
+              hasMenu: {
+                "@type": "Menu",
+                name: "Men\u00fa Digital",
+              },
+            }),
+          }}
+        />
         {children}
       </body>
     </html>

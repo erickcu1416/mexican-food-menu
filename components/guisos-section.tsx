@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { SectionImage } from "@/components/section-image"
 
 const guisos = [
   "Carne asada",
@@ -13,16 +13,15 @@ const guisos = [
 export function GuisosSection() {
   return (
     <section className="px-5 md:px-8">
-      <div className="rounded-xl bg-verde/5 border-l-4 border-l-verde overflow-hidden">
+      <div className="rounded-xl bg-verde/5 border-l-4 border-l-verde overflow-hidden shadow-sm ring-1 ring-black/[0.03]">
         {/* Section image */}
         <div className="relative w-full h-36 md:h-44 overflow-hidden bg-muted">
-          <Image
+          <SectionImage
             src="/images/guisos.webp"
             alt="Variedad de guisos mexicanos tradicionales"
             fill
             sizes="(max-width: 640px) calc(100vw - 40px), 468px"
             className="object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-3 left-4 flex items-center gap-2.5">
@@ -36,7 +35,7 @@ export function GuisosSection() {
         {/* Guiso options */}
         <div className="p-4 md:p-5">
           <p className="text-sm text-muted-foreground font-sans mb-3">
-            {"Elige tu guiso favorito para acompan\u0303ar tu antojito:"}
+            {"Elige tu guiso favorito para acompa\u00f1ar tu antojito:"}
           </p>
           <div className="flex flex-wrap gap-2">
             {guisos.map((guiso) => (

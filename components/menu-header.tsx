@@ -29,19 +29,19 @@ export function MenuHeader() {
             {"Doña Martha"}
           </span>
         </h1>
-        <p className="text-sm text-muted-foreground font-sans text-center max-w-xs">
+        <p className="font-serif text-sm italic tracking-wide text-muted-foreground text-center max-w-xs">
           {"Sabor tradicional hecho con amor"}
         </p>
       </div>
 
       {/* Hero image */}
-      <div className="mt-4 mx-5 md:mx-8 rounded-xl overflow-hidden shadow-md bg-muted">
+      <div className="mt-4 mx-5 md:mx-8 rounded-xl overflow-hidden shadow-lg ring-1 ring-black/[0.04] bg-muted">
         <Image
           src="/images/hero-banner.webp"
           alt="Variedad de antojitos mexicanos tradicionales"
           width={800}
           height={400}
-          className="w-full h-40 md:h-56 lg:h-64 object-cover"
+          className="w-full h-52 md:h-64 lg:h-72 object-cover"
           priority
         />
       </div>

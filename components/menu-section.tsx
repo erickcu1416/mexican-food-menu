@@ -1,8 +1,10 @@
-import Image from "next/image"
+import { SectionImage } from "@/components/section-image"
 
 interface MenuItem {
   name: string
   price: string
+  description?: string
+  badge?: "popular" | "nuevo"
 }
 
 interface MenuSectionProps {
@@ -24,13 +26,13 @@ const accentClasses = {
     title: "text-azul-talavera",
     border: "border-l-azul-talavera",
     bg: "bg-azul-talavera/5",
-    flower: "#1B5FAA",
+    flower: "#1A6BBF",
   },
   amarillo: {
     title: "text-amarillo",
     border: "border-l-amarillo",
     bg: "bg-amarillo/10",
-    flower: "#E8B600",
+    flower: "#A38A0E",
   },
   verde: {
     title: "text-verde",
@@ -45,16 +47,15 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
 
   return (
     <section className="px-5 md:px-8">
-      <div className={`rounded-xl ${accent.bg} border-l-4 ${accent.border} overflow-hidden`}>
+      <div className={`rounded-xl ${accent.bg} border-l-4 ${accent.border} overflow-hidden shadow-sm ring-1 ring-black/[0.03]`}>
         {/* Section image */}
         <div className="relative w-full h-36 md:h-44 overflow-hidden bg-muted">
-          <Image
+          <SectionImage
             src={image}
             alt={imageAlt}
             fill
             sizes="(max-width: 640px) calc(100vw - 40px), 468px"
             className="object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-3 left-4 flex items-center gap-2.5">
@@ -67,15 +68,33 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
 
         {/* Menu items */}
         <div className="p-4 md:p-5">
-          <ul className="flex flex-col gap-3" role="list">
+          <ul className="flex flex-col gap-3.5" role="list">
             {items.map((item) => (
               <li
                 key={item.name}
-                className="flex items-baseline justify-between gap-2 rounded-md -mx-1 px-1 transition-colors hover:bg-black/[0.02] active:bg-black/[0.04]"
+                className="flex justify-between gap-3 rounded-md -mx-1 px-1 py-0.5 transition-colors hover:bg-black/[0.03] active:bg-black/[0.05]"
               >
-                <span className="font-sans text-base text-foreground">{item.name}</span>
-                <span className="flex-1 border-b border-dotted border-border min-w-[2rem] mx-1 translate-y-[-4px]" aria-hidden="true" />
-                <span className={`font-sans font-semibold text-base ${accent.title} tabular-nums whitespace-nowrap`}>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="font-sans text-base font-medium text-foreground">{item.name}</span>
+                    {item.badge === "popular" && (
+                      <span className="text-[10px] uppercase tracking-wider font-bold text-rosa-mexicano bg-rosa-mexicano/10 rounded-full px-1.5 py-0.5 leading-none">
+                        Popular
+                      </span>
+                    )}
+                    {item.badge === "nuevo" && (
+                      <span className="text-[10px] uppercase tracking-wider font-bold text-verde bg-verde/10 rounded-full px-1.5 py-0.5 leading-none">
+                        Nuevo
+                      </span>
+                    )}
+                  </div>
+                  {item.description && (
+                    <p className="text-xs text-muted-foreground mt-0.5 leading-snug">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+                <span className={`font-sans font-semibold text-base ${accent.title} tabular-nums whitespace-nowrap self-start`}>
                   {item.price}
                 </span>
               </li>
