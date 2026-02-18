@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://er-frontend-development.ngrok.app'),
+  metadataBase: new URL('https://menu-antojitos-dona-marta.vercel.app'),
   title: 'Antojitos Doña Martha | Menú Digital',
   description: 'Panuchos, salbutes, tacos, sopes y huaraches en Leona Vicario, Puerto Morelos. Antojitos yucatecos hechos a mano. Pide por WhatsApp.',
   keywords: 'antojitos mexicanos, comida yucateca, panuchos, salbutes, tacos, Leona Vicario, Puerto Morelos, menú digital',
