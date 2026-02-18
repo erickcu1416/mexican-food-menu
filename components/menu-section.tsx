@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 interface MenuItem {
   name: string
@@ -48,11 +48,12 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
       <div className={`rounded-xl ${accent.bg} border-l-4 ${accent.border} overflow-hidden`}>
         {/* Section image */}
         <div className="relative w-full h-36 md:h-44 overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={image}
             alt={imageAlt}
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-3 left-4 flex items-center gap-2.5">

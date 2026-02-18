@@ -37,15 +37,13 @@ export default function Page() {
         className="hidden md:block absolute top-0 right-0 w-24 lg:w-36 h-full pointer-events-none z-0"
         style={{ maskImage: "linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)", WebkitMaskImage: "linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)" }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/floral-border.png" alt="" className="w-full h-full object-cover mix-blend-multiply opacity-60" />
+        <img src="/images/floral-border.webp" alt="" className="w-full h-full object-cover mix-blend-multiply opacity-60" loading="lazy" aria-hidden="true" />
       </div>
       <div
         className="hidden md:block absolute top-0 left-0 w-24 lg:w-36 h-full pointer-events-none z-0 -scale-x-100"
         style={{ maskImage: "linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)", WebkitMaskImage: "linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)" }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/floral-border.png" alt="" className="w-full h-full object-cover mix-blend-multiply opacity-60" />
+        <img src="/images/floral-border.webp" alt="" className="w-full h-full object-cover mix-blend-multiply opacity-60" loading="lazy" aria-hidden="true" />
       </div>
 
       <main className="relative z-10 mx-auto max-w-lg pb-28">
@@ -58,7 +56,7 @@ export default function Page() {
           <MenuSection
             title="Fritos"
             items={fritosItems}
-            image="/images/fritos.png"
+            image="/images/fritos.webp"
             imageAlt="Panuchos, salbutes y empanadas fritas"
             accentColor="rosa"
           />
@@ -69,7 +67,7 @@ export default function Page() {
           <MenuSection
             title="Al Comal"
             items={alComalItems}
-            image="/images/al-comal.png"
+            image="/images/al-comal.webp"
             imageAlt="Tacos, sopes, huaraches y quesadillas al comal"
             accentColor="azul"
           />
@@ -80,7 +78,7 @@ export default function Page() {
           <MenuSection
             title="Bebidas"
             items={bebidasItems}
-            image="/images/bebidas.png"
+            image="/images/bebidas.webp"
             imageAlt="Aguas frescas de jamaica y horchata"
             accentColor="amarillo"
           />

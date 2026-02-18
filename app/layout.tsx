@@ -21,7 +21,16 @@ export const metadata: Metadata = {
     title: 'Antojitos Doña Martha | Menú Digital',
     description: 'Deliciosos antojitos mexicanos. Pide por WhatsApp.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Antojitos Doña Martha - Menú Digital',
+      },
+    ],
   },
+  manifest: '/manifest.json',
 }
 
 export const viewport: Viewport = {

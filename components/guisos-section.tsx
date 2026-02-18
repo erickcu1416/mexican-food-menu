@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 const guisos = [
   "Carne asada",
@@ -16,11 +16,12 @@ export function GuisosSection() {
       <div className="rounded-xl bg-verde/5 border-l-4 border-l-verde overflow-hidden">
         {/* Section image */}
         <div className="relative w-full h-36 md:h-44 overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/guisos.png"
+          <Image
+            src="/images/guisos.webp"
             alt="Variedad de guisos mexicanos tradicionales"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-3 left-4 flex items-center gap-2.5">
