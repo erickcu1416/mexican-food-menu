@@ -8,20 +8,20 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll"
 import { SectionNav } from "@/components/section-nav"
 
 const fritosItems = [
-  { name: "Panuchos", price: "$20", description: "Tortilla crujiente rellena de frijol con jugosa cochinita pibil, cebolla morada curtida y aguacate", badge: "popular" as const },
-  { name: "Salbutes", price: "$20", description: "Tortilla inflada y ligera con lechuga fresca, tomate, cebolla y cochinita pibil" },
+  { name: "Panuchos", price: "$20", description: "Tortilla crujiente rellena de frijol", badge: "popular" as const },
+  { name: "Salbutes", price: "$20", description: "Tortilla inflada y ligera con lechuga fresca, tomate, cebolla y guiso al gusto" },
   { name: "Empanadas", price: "$20", description: "Masa crujiente rellena de queso o guiso, dorada al punto perfecto" },
   { name: "Empanadas especiales", price: "$25", description: "Rellenas de queso Oaxaca con tu guiso, acompa\u00f1adas de salsa de la casa", badge: "nuevo" as const },
 ]
 
 const alComalItems = [
-  { name: "Tacos", price: "$20", description: "Tortilla de ma\u00edz reci\u00e9n hecha al comal con tu guiso favorito y cilantro fresco" },
-  { name: "Sopes", price: "$20", description: "Base de masa dorada con frijol untado, crema, lechuga, queso fresco y tu guiso" },
+  { name: "Tacos", price: "$20", description: "Tortilla de ma\u00edz reci\u00e9n hecha al comal con tu guiso favorito" },
+  { name: "Sopes", price: "$20", description: "Base de masa dorada con frijol untado, crema, lechuga y tu guiso" },
   { name: "Huaraches", price: "$40", description: "Generosa masa ovalada al comal con frijol, queso, crema, salsa y tu guiso", badge: "popular" as const },
-  { name: "Huaraches especiales", price: "$45", description: "Con doble porci\u00f3n de guiso, queso Oaxaca gratinado y extras" },
+  { name: "Huaraches especiales", price: "$45", description: "Con queso Oaxaca gratinado y extras" },
   { name: "Quesadillas", price: "$40", description: "Tortilla de ma\u00edz doblada con queso Oaxaca fundido y tu guiso favorito" },
   { name: "Tortas", price: "$40", description: "Pan telera calientito con frijol, aguacate, crema, lechuga, tomate y guiso" },
-  { name: "Tortas especiales", price: "$45", description: "Con doble guiso, queso Oaxaca derretido y todos los complementos" },
+  { name: "Tortas especiales", price: "$45", description: "Con un guiso, queso Oaxaca derretido y todos los complementos" },
 ]
 
 const bebidasItems = [
