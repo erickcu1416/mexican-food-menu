@@ -35,7 +35,7 @@ export function GuisosSection() {
         {/* Guiso options */}
         <div className="p-4 md:p-5">
           <p className="text-sm text-muted-foreground font-sans mb-3">
-            {"Elige tu guiso favorito para acompa\u00f1ar tu antojito:"}
+            {"El guiso ya est\u00e1 incluido en el precio de tu antojito. \u00a1Elige tu favorito!"}
           </p>
           <div className="flex flex-wrap gap-2">
             {guisos.map((guiso) => (

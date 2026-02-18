@@ -15,10 +15,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Antojitos Doña Martha | Menú Digital',
-  description: 'Deliciosos antojitos mexicanos: panuchos, salbutes, tacos, sopes, huaraches y más. Pide por WhatsApp.',
-  keywords: 'antojitos mexicanos, comida mexicana, tacos, panuchos, salbutes, menú digital',
+  description: 'Panuchos, salbutes, tacos, sopes y huaraches en Leona Vicario, Puerto Morelos. Antojitos yucatecos hechos a mano. Pide por WhatsApp.',
+  keywords: 'antojitos mexicanos, comida yucateca, panuchos, salbutes, tacos, Leona Vicario, Puerto Morelos, menú digital',
   openGraph: {
-    title: 'Antojitos Doña Martha | Menú Digital',
+    title: 'Antojitos Doña Martha | Leona Vicario',
     description: 'Panuchos, salbutes, tacos al comal, guisos y bebidas. Menú completo con precios. ¡Pide directo por WhatsApp!',
     type: 'website',
     locale: 'es_MX',

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 export function WhatsAppCTA() {
   const whatsappNumber = "5219983899888"
   const message = encodeURIComponent(
-    "Hola, me gustar\u00eda hacer un pedido de Antojitos Do\u00f1a Martha"
+    "\u00a1Hola! Vi el men\u00fa digital y quiero pedir:\n\n\u2022 \n\nGuiso: \nPara: llevar / comer aqu\u00ed"
   )
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 

@@ -4,7 +4,7 @@ interface MenuItem {
   name: string
   price: string
   description?: string
-  badge?: "popular" | "nuevo"
+  badge?: "popular" | "nuevo" | "casera"
 }
 
 interface MenuSectionProps {
@@ -85,6 +85,11 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
                     {item.badge === "nuevo" && (
                       <span className="text-[10px] uppercase tracking-wider font-bold text-verde bg-verde/10 rounded-full px-1.5 py-0.5 leading-none">
                         Nuevo
+                      </span>
+                    )}
+                    {item.badge === "casera" && (
+                      <span className="text-[10px] uppercase tracking-wider font-bold text-amarillo bg-amarillo/10 rounded-full px-1.5 py-0.5 leading-none">
+                        Casera
                       </span>
                     )}
                   </div>

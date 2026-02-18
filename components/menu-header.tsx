@@ -30,7 +30,7 @@ export function MenuHeader() {
           </span>
         </h1>
         <p className="font-serif text-sm italic tracking-wide text-muted-foreground text-center max-w-xs">
-          {"Sabor tradicional hecho con amor"}
+          {"Antojitos yucatecos hechos a mano con recetas de la abuela"}
         </p>
       </div>
 
