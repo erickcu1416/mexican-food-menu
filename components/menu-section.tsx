@@ -72,23 +72,23 @@ export function MenuSection({ title, items, image, imageAlt, accentColor }: Menu
             {items.map((item) => (
               <li
                 key={item.name}
-                className="flex justify-between gap-3 rounded-md -mx-1 px-1 py-0.5 transition-colors hover:bg-black/[0.03] active:bg-black/[0.05]"
+                className="flex justify-between gap-3 rounded-md -mx-1 px-1 py-0.5 transition-colors hover:bg-black/[0.03] active:bg-black/[0.08]"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="font-sans text-base font-medium text-foreground">{item.name}</span>
                     {item.badge === "popular" && (
-                      <span className="text-[10px] uppercase tracking-wider font-bold text-rosa-mexicano bg-rosa-mexicano/10 rounded-full px-1.5 py-0.5 leading-none">
+                      <span className="text-[11px] uppercase tracking-wider font-bold text-rosa-mexicano bg-rosa-mexicano/10 rounded-full px-1.5 py-0.5 leading-none">
                         Popular
                       </span>
                     )}
                     {item.badge === "nuevo" && (
-                      <span className="text-[10px] uppercase tracking-wider font-bold text-verde bg-verde/10 rounded-full px-1.5 py-0.5 leading-none">
+                      <span className="text-[11px] uppercase tracking-wider font-bold text-verde bg-verde/10 rounded-full px-1.5 py-0.5 leading-none">
                         Nuevo
                       </span>
                     )}
                     {item.badge === "casera" && (
-                      <span className="text-[10px] uppercase tracking-wider font-bold text-amarillo bg-amarillo/10 rounded-full px-1.5 py-0.5 leading-none">
+                      <span className="text-[11px] uppercase tracking-wider font-bold text-amarillo bg-amarillo/10 rounded-full px-1.5 py-0.5 leading-none">
                         Casera
                       </span>
                     )}

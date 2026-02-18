@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 export function WhatsAppCTA() {
   const whatsappNumber = "5219983899888"
   const message = encodeURIComponent(
-    "\u00a1Hola! Vi el men\u00fa digital y quiero pedir:\n\n\u2022 \n\nGuiso: \nPara: llevar / comer aqu\u00ed"
+    "\u00a1Hola! Vi el men\u00fa y quiero pedir:\n\nAntojito: \nGuiso: \nPara llevar / comer aqu\u00ed"
   )
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -22,7 +22,7 @@ export function WhatsAppCTA() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className={`pointer-events-auto group relative overflow-hidden flex items-center justify-center gap-2.5 w-full max-w-md mx-auto rounded-full bg-[#25D366] px-6 py-4 text-[#fff] font-sans shadow-lg shadow-[#25D366]/30 transition-all duration-200 hover:bg-[#1DA851] hover:shadow-xl hover:shadow-[#25D366]/40 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 ${isBouncing ? "motion-safe:animate-subtle-bounce" : ""}`}
+        className={`pointer-events-auto group relative overflow-hidden flex items-center justify-center gap-2.5 w-full max-w-lg mx-auto rounded-full bg-[#25D366] px-6 py-4 text-[#fff] font-sans shadow-lg shadow-[#25D366]/30 transition-all duration-200 hover:bg-[#1DA851] hover:shadow-xl hover:shadow-[#25D366]/40 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 ${isBouncing ? "motion-safe:animate-subtle-bounce" : ""}`}
         aria-label="Pedir por WhatsApp"
       >
         {/* Shimmer effect */}

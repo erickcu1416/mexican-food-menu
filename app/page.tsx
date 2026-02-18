@@ -34,6 +34,7 @@ const bebidasItems = [
 
 export default function Page() {
   return (
+    <>
     <div className="relative min-h-screen overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(30 50% 97%) 0%, hsl(330 30% 97%) 50%, hsl(30 50% 97%) 100%)" }}>
       {/* Floral side borders - hidden on mobile, visible on md+ with soft blend */}
       <div
@@ -106,8 +107,6 @@ export default function Page() {
           </AnimateOnScroll>
         </div>
 
-        <FloralDivider />
-
         {/* Footer */}
         <footer className="mt-4 px-4 pb-4 text-center">
           <p className="text-xs text-muted-foreground font-sans">
@@ -146,8 +145,10 @@ export default function Page() {
         </footer>
       </main>
 
-      {/* Floating WhatsApp CTA */}
-      <WhatsAppCTA />
     </div>
+
+    {/* Floating WhatsApp CTA */}
+    <WhatsAppCTA />
+    </>
   )
 }

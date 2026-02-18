@@ -41,7 +41,7 @@ export function GuisosSection() {
             {guisos.map((guiso) => (
               <span
                 key={guiso}
-                className="inline-flex items-center gap-1.5 rounded-full border border-verde/30 bg-verde/10 px-3 py-1.5 text-sm font-sans text-foreground transition-colors hover:bg-verde/20 hover:border-verde/50"
+                className="inline-flex items-center gap-1.5 rounded-full border border-verde/30 bg-verde/10 px-3 py-1.5 text-sm font-sans text-foreground"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-verde flex-shrink-0" aria-hidden="true" />
                 {guiso}

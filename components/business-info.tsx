@@ -2,7 +2,7 @@ import { Clock, MapPin, UtensilsCrossed, MessageCircle, CircleCheck } from "luci
 
 export function BusinessInfo() {
   return (
-    <section className="px-5 md:px-8 mt-2 space-y-5">
+    <section className="px-5 md:px-8 mt-5 space-y-5">
       {/* Brand info */}
       <div className="text-center space-y-3">
         <p className="text-xs uppercase tracking-[0.2em] text-rosa-mexicano font-sans font-semibold">
@@ -29,7 +29,11 @@ export function BusinessInfo() {
       </div>
 
       {/* How to order */}
-      <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
+      <div className="space-y-2.5 max-w-sm mx-auto">
+        <p className="text-[11px] uppercase tracking-widest text-muted-foreground font-sans font-medium text-center">
+          {"¿Cómo pedir?"}
+        </p>
+      <div className="grid grid-cols-3 gap-3">
         <div className="flex flex-col items-center gap-1.5 text-center">
           <div className="w-8 h-8 rounded-full bg-rosa-mexicano/10 flex items-center justify-center">
             <UtensilsCrossed className="w-4 h-4 text-rosa-mexicano" aria-hidden="true" />
@@ -54,6 +58,7 @@ export function BusinessInfo() {
             {"Env\u00eda tu pedido y \u00a1listo!"}
           </p>
         </div>
+      </div>
       </div>
     </section>
   )
