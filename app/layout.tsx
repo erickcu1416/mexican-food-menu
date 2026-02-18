@@ -52,6 +52,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="dns-prefetch" href="https://wa.me" />
+        <link rel="dns-prefetch" href="https://maps.google.com" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
